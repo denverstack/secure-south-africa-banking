@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
+import React from 'react';
+import { AuthProvider } from '@/contexts/AuthContext';
+import { BankingProvider } from '@/contexts/BankingContext';
+import { useAuth } from '@/contexts/AuthContext';
+import AuthScreen from '@/components/AuthScreen';
+import Dashboard from '@/components/Dashboard';
+
+// Inner component that uses the auth context
+const AppContent = () => {
+  const { isAuthenticated, user } = useAuth();
+  
+  return isAuthenticated && user?.isVerified ? <Dashboard /> : <AuthScreen />;
+};
+
+// Main container that provides all contexts
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <AuthProvider>
+      <BankingProvider>
+        <AppContent />
+      </BankingProvider>
+    </AuthProvider>
   );
 };
 
