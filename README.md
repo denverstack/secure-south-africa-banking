@@ -44,7 +44,8 @@ This project is built with:
 ![Screenshot (2)](https://github.com/user-attachments/assets/64984403-fc56-4882-a2f9-417516ebaa44)
 ![Screenshot (3)](https://github.com/user-attachments/assets/3a0f5415-eef5-421c-aeda-5cfa392f527f)
 ![Screenshot (4)](https://github.com/user-attachments/assets/a0a87d9d-860b-4954-9b9d-536df7a67adf)
-![Screenshot (6)](https://github.com/user-attachments/assets/01cf2398-deeb-40f8-96b6-70f8611414b0)
+
+![Screenshot (6)](https://github.com/user-attachments/assets/00087017-8622-48ae-86f9-306c3844f83a)
 
 
 
